@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 💬 Chat-Application
 
-## Getting Started
+This project is a **Chat Application** built with a **Flask** backend and a **Next.js (TypeScript)** frontend. The application integrates the **Bard AI API** to enable AI-powered chatbot interactions.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Flask Backend** (`flask-back/`)
+  - Built with **Python**
+  - Integrates **Bard AI API**
+  - Handles API requests for AI chat responses
+- **Next.js Frontend** (`next-front/`)
+  - Built with **Next.js & TypeScript**
+  - Communicates with the Flask API
+  - Provides a chat UI for users
+
+## 💂️ Installation  
+
+### 1. Clone the Repository
+```sh
+git clone https://github.com/your-repo/chat-application.git
+cd chat-application
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Setup Backend (`flask-back/`)
+```sh
+cd flask-back
+python -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+pip install -r requirements.txt
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Setup Frontend (`next-front/`)
+```sh
+cd ../next-front
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 💪 Running the Project  
 
-## Learn More
+### Start Flask Backend
+```sh
+cd flask-back
+source venv/bin/activate
+python app.py
+```
+- Runs on **`http://localhost:5000`**
 
-To learn more about Next.js, take a look at the following resources:
+### Start Next.js Frontend
+```sh
+cd ../next-front
+npm run dev
+```
+- Runs on **`http://localhost:3000`**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠️ API Integration  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Flask API (`flask-back/app.py`)
+```python
+```
 
-## Deploy on Vercel
+### Next.js Frontend (`next-front/pages/index.tsx`)
+```tsx
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📁 Folder Structure  
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+chat-application/
+│── 📁 flask-back/
+│
+│── 📁 next-front/
+│
+│── README.md
+```
+
+## 🌟 License  
+This project is open-source and available under the **MIT License**.  
+
+---
+
+🚀 Now you have a fully functional Chat Application with Bard AI integration! Let me know if you need enhancements. 🚀
+
