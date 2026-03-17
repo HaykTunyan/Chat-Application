@@ -79,4 +79,3 @@ This project is open-source and available under the **MIT License**.
 ---
 
 🚀 Now you have a fully functional Chat Application with Bard AI integration! Let me know if you need enhancements. 🚀
-
